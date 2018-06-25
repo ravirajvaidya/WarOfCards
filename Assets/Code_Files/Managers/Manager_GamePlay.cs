@@ -84,7 +84,7 @@ public class Manager_GamePlay : MonoBehaviour {
     }
     #endregion
 
-    #region LoadGame
+    #region SetUpGame
     void SetDefaults()
     {
         mMaxCards = 52;
@@ -131,9 +131,7 @@ public class Manager_GamePlay : MonoBehaviour {
         var rand = new System.Random();
         mListOfCards = mListOfCards.OrderBy(x => rand.Next()).ToList();
     }
-    #endregion
 
-    #region GamePlayOperations
     public void LoadGame(int mode)
     {
         DivideCards(mode);
@@ -173,7 +171,10 @@ public class Manager_GamePlay : MonoBehaviour {
             mListOfPlayers.Add(aPlayer);
         }
     }
-    
+    #endregion
+
+    #region GamePlayOperations
+
     private void SetPlayersTurn(PlayersId pt)
     {
         mPlayersTurn = pt;
