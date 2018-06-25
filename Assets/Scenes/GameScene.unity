@@ -244,7 +244,8 @@ CanvasRenderer:
 --- !u!82 &103961339
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 82833009662659320, guid: 7cea0dcf294e74b4b9a041ac8e81e45b,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 103961334}
   m_Enabled: 1
@@ -461,9 +462,6 @@ MonoBehaviour:
   mListOfPlayers: []
   mNumberOfCardsToDraw: 1
   mPlayersTurn: 0
-  mCurrentPlayer:
-    mPlayersId: -1
-    mListOfCard: []
   mListOfCurrentCardsShown: []
   mWarStart: {fileID: 8300000, guid: d253b56302771bc49aef099b858c0f36, type: 3}
   mWarMode: {fileID: 8300000, guid: bf4c4ded7787c194588164289e0be10f, type: 3}
