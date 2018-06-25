@@ -249,13 +249,6 @@ public class Manager_GamePlay : MonoBehaviour {
         }
     }
 
-    private IEnumerator LoadNextRound(PlayersId pId)
-    {
-        yield return new WaitForSeconds(1f);
-        mPlayersPlayedThereTurns = 0;
-        SetPlayersTurn(pId);
-    }
-
     private bool DeclareMatchWinner()
     {
         bool isMatchOver = false; ;
@@ -284,6 +277,14 @@ public class Manager_GamePlay : MonoBehaviour {
 
         return isMatchOver;
     }
+
+    private IEnumerator LoadNextRound(PlayersId pId)
+    {
+        yield return new WaitForSeconds(1f);
+        mPlayersPlayedThereTurns = 0;
+        SetPlayersTurn(pId);
+    }
+
     #endregion
 
     #region Callbacks
