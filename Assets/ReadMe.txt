@@ -30,3 +30,7 @@ CheckForRoundWinner() - Checks if any player has won the round.
 DeclareRoundWinner() - Declares the winner and check if match is over, if not loads the next round.
 DeclareMatchWinner() - Declares the winner of the match and ends the game.
 LoadNextRound() - Load the next round by setting up the previous rounds winner as next player to play the round.
+
+UI Classes :
+Base UI - Base class for all the UI screens.
+Player Controler - To controle the players action on UI.
